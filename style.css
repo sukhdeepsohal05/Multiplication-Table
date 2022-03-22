@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.dark {
+  background: url("dark.jpg") center center/cover no-repeat;
+  color: #b4aeae;
+}
+
+.light {
+  background: url("light.jpg") center center/cover no-repeat;
+  color: #4b4444;
+}
+
+.theme {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  width: 40px;
+  height: 40px;
+}
+
+.sun {
+  display: none;
+  filter: invert(1);
+}
+
+.taking-num-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(163, 105, 105);
+  margin: 10px 0px;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #4b4444;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.button {
+  font-size: 1.2rem;
+  background: #ffffff50;
+  color: #4b4444;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+.button:hover {
+  background: #ffffff50;
+}
+
+.table-box {
+  width: 50%;
+  height: 70%;
+  background: #37373724;
+  backdrop-filter: blur(5px);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5%;
+  padding: 45px;
+}
+
+.heading {
+  margin-bottom: calc(1rem + 0.8vh);
+}
+
+.table-item {
+  padding: 2px;
+  display: block;
+  text-align: justify;
+}
+
+.error-div{
+  width: 50%;
+  margin: 0rem auto;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50% , 0%);
+  display: none;
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 0.3rem;
+  font-size: calc(0.8rem + 0.2vw);
+}
+
+
+@media screen and (max-width:768px){
+    .taking-num-wrapper h1{
+        font-size: 1.3rem;
+    }
+
+    .input, .button{
+        font-size: 1rem;
+    }
+
+    .table-box{
+        width: 70%;
+        padding: 30px;
+    }
+
+    .heading {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width:426px){
+    .theme {
+        top: 15px;
+        left: 15px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .taking-num-wrapper{
+        text-align: center;
+    }
+
+    .taking-num-wrapper h1{
+        font-size: 1rem;
+    }
+
+    .input, .button{
+        padding: 5px;
+    }
+
+    .table-box{
+        width: 90%;
+    }
+
+    .heading{
+        font-size: 1.3rem;
+    }
+
+    .table-box h2{
+        font-size: 1.3rem;
+    }
+}
