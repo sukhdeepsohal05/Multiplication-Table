@@ -14,12 +14,12 @@ body {
 }
 
 .dark {
-  background: url("dark.jpg") center center/cover no-repeat;
+  background: url("images/dark.jpg") center center/cover no-repeat;
   color: #b4aeae;
 }
 
 .light {
-  background: url("light.jpg") center center/cover no-repeat;
+  background: url("images/light.jpg") center center/cover no-repeat;
   color: #4b4444;
 }
 
